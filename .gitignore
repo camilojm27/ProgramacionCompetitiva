@@ -1,0 +1,13 @@
+#C++ Outputs
+*.o
+*.test.o
+
+# Visual Studio and Visul Studio Code (Files) 
+*.vcxproj
+*.sln
+*.filters
+*.user
+*.json
+#-----------VS-Folders--------------
+.vs*
+debug*
