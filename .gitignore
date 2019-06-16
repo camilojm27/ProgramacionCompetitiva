@@ -1,6 +1,18 @@
 #C++ Outputs
 *.o
 *.test.o
+*.out 
+
+#Java Outputs
+*.class
+bin*
+
+#Clion Folders 
+.idea*
+cmake-build-debug*
+
+#Cmake Files
+*CMakeList.txt
 
 # Visual Studio and Visul Studio Code (Files) 
 *.vcxproj
@@ -9,5 +21,11 @@
 *.user
 *.json
 #-----------VS-Folders--------------
-#.vs*
+.vs*
 debug*
+#----------Eclipse Folders-------------
+.metadate
+.settings
+#----------Eclipse Files---------------
+*.classpath
+*.project
