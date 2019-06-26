@@ -13,6 +13,7 @@ cmake-build-debug*
 
 #Cmake Files
 *CMakeList.txt
+build*
 
 # Visual Studio and Visul Studio Code (Files) 
 *.vcxproj
