@@ -66,8 +66,7 @@ void printInfo(Contactos *libreta) {
 }
 
 int main() {
-    int done;
-    int stack;
+    int done,contadorLibreta=1;
     string nombre, apellido, dato, vacio = "";
     cin >> done;
     do {
@@ -83,8 +82,9 @@ int main() {
             }
 
         }
+        cout << "Lista de contactos #"<<contadorLibreta<<":"<<endl;
         printInfo(libreta);
-
+        contadorLibreta++;
         cin >> done;
 
     } while (done > 0);
