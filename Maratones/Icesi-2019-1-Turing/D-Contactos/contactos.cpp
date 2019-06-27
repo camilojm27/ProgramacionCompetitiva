@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <ios>
 
 using namespace std;
 
 struct Contactos {
-
+    
     vector<string> numeros;
     vector<string> correos;
 
@@ -41,7 +42,7 @@ void insertContacto(Contactos *&libreta, string newNombre, string newNumero, str
 void printInfo(Contactos *libreta) {
     if (libreta != NULL) {
         printInfo(libreta->izquierda);
-        cout << libreta->nombre << "\nTelefono:\n";
+        cout << endl << libreta->nombre << "\nTelefono:\n";
 
         for (auto it = libreta->numeros.begin(); it != libreta->numeros.end(); it++) {
             if(*it != ""){
@@ -59,13 +60,14 @@ void printInfo(Contactos *libreta) {
 
         }
 
-        cout << "###\n";
+        cout << "###";
         printInfo(libreta->derecha);
     }
 
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
     int done,contadorLibreta=1;
     string nombre, apellido, dato, vacio = "";
     cin >> done;
@@ -78,14 +80,21 @@ int main() {
             if (dato.find('@') != std::string::npos) {
                 insertContacto(libreta, nombre, vacio, dato);
             } else {
+                dato.insert(0,"(");
+                dato.insert(4, ")");
+                dato.insert(8, "-");
+
                 insertContacto(libreta, nombre, dato, vacio);
             }
 
         }
-        cout << "Lista de contactos #"<<contadorLibreta<<":"<<endl;
+        cin >> done;
+        cout << "Lista de contactos #"<<contadorLibreta<<":";
         printInfo(libreta);
         contadorLibreta++;
-        cin >> done;
+        if(done != 0){
+            cout << endl;
+        }
 
     } while (done > 0);
 

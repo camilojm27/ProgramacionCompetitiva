@@ -1,8 +1,8 @@
-#C++ Outputs
+#Executables
 *.o
 *.test.o
 *.out 
-
+*.exe
 #Java Outputs
 *.class
 bin*
