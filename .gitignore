@@ -10,7 +10,8 @@ bin*
 #Clion Folders 
 .idea*
 cmake-build-debug*
-
+#Idea Files
+*.iml
 #Cmake Files
 *CMakeList.txt
 build*
