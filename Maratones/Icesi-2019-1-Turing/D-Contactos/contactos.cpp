@@ -1,8 +1,10 @@
+//Terminado
 #include <iostream>
 #include <vector>
 #include <string>
 #include <ios>
 #include <algorithm>
+//#include <cstdio>
 
 using namespace std;
 
@@ -44,7 +46,7 @@ void insertContacto(Contactos *&libreta, string newNombre, string newNumero, str
 void printInfo(Contactos *libreta) {
     if (libreta != NULL) {
         printInfo(libreta->izquierda);
-        cout << endl << libreta->nombre << "\nTelefono:\n";
+        cout  << libreta->nombre << "\nTelefono:\n";
 
         for (auto it = libreta->numeros.begin(); it != libreta->numeros.end(); it++) {
             if(*it != ""){
@@ -62,13 +64,14 @@ void printInfo(Contactos *libreta) {
 
         }
 
-        cout << "###";
+        cout << "###" << endl;
         printInfo(libreta->derecha);
     }
 
 }
 
 int main() {
+    //freopen("out","w",stdout);
     ios_base::sync_with_stdio(false);
     int done,contadorLibreta=1;
     string nombre, apellido, dato, vacio = "";
@@ -96,13 +99,13 @@ int main() {
         sort(libreta->correos.begin(), libreta->correos.end());
 
         cin >> done;
-        if (contadorLibreta > 1 and done != 0){cout << endl;}
-        cout << "Lista de contactos #"<<contadorLibreta<<":";
+ 
+        cout << "Lista de contactos # "<<contadorLibreta<<":" << endl;
         printInfo(libreta);
+        
         contadorLibreta++;
-        if(done != 0){
-            cout << endl;
-        }
+        cout << endl;
+       
 
     }
 
