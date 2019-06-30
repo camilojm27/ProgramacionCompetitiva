@@ -29,3 +29,5 @@ debug*
 #----------Eclipse Files---------------
 *.classpath
 *.project
+*.txt
+*.exe
