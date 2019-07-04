@@ -1,8 +1,8 @@
-#C++ Outputs
+#Executables
 *.o
 *.test.o
 *.out 
-
+*.exe
 #Java Outputs
 *.class
 bin*
@@ -13,6 +13,7 @@ cmake-build-debug*
 
 #Cmake Files
 *CMakeList.txt
+build*
 
 # Visual Studio and Visul Studio Code (Files) 
 *.vcxproj
@@ -29,6 +30,7 @@ debug*
 #----------Eclipse Files---------------
 *.classpath
 *.project
+
+*.iml
 *.txt
 *.exe
-*.iml
