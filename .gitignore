@@ -29,6 +29,13 @@ debug*
 #----------Eclipse Files---------------
 *.classpath
 *.project
+<<<<<<< HEAD
 *.txt
 *.exe
 *.iml
+=======
+
+*.iml
+*.txt
+*.exe
+>>>>>>> 4c0bfc5132bbf2846a3f10f1b5da32a4ab355e3b
