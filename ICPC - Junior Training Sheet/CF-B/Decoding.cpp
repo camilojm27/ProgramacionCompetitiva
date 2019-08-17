@@ -22,14 +22,14 @@ int main() {
             character =  word.at(lenght/2);
             word.erase(word.begin() + lenght/2);
         }
-        //out += character;
+        out += character;
 
         lenght--;
     }
 
-    for (int i = word.size(); i > 0 ; --i) {
-        
+    for (int i = out.size() - 1; i >= 0 ; --i) {
+        cout << out[i];
     }
-    cout << out;
+    
     return 0;
 }
