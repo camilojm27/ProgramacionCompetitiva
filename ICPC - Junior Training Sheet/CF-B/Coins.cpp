@@ -24,7 +24,7 @@ int main() {
 
     }
 
-    if (m['A'] == 1 and m['B' == 1] and m['C'] == 1) {
+    if (m['A'] == 1 and m['B'] == 1 and m['C'] == 1) {
         cout << "Impossible";
     } else {
         for (int i = 0; i < 3; ++i) {
