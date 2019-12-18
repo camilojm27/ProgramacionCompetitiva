@@ -20,6 +20,8 @@ cmake-build-debug*
 *.filters
 *.user
 *.json
+#VScode Extensions
+*.tcs
 #-----------VS-Folders--------------
 .vs*
 debug*
@@ -38,4 +40,4 @@ debug*
 *.iml
 *.txt
 *.exe
->>>>>>> 4c0bfc5132bbf2846a3f10f1b5da32a4ab355e3b
+
